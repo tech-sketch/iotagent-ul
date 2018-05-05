@@ -26,7 +26,14 @@ config.mqtt = {
     host: "mqtt",
     port: 1883,
     username: "iotagent",
-    password: "<<password_of_iotagent>>"
+    password: "<<password_of_iotagent>>",
+    extensions: [
+        {
+            name: "distinctMessage",
+            description: "distinct mqtt message",
+            providerUrl: "http://mqtt-msgfilter:5001/distinct/"
+        }
+    ]
 };
 
 config.http = {
