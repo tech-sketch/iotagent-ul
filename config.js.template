@@ -26,7 +26,7 @@ config.mqtt = {
     host: "mqtt",
     port: 1883,
     username: "iotagent",
-    password: "<<password_of_iotagent>>",
+    password: "${IOTAGENT_PASSWORD}",
     extensions: [
         {
             name: "distinctMessage",
@@ -54,7 +54,7 @@ config.iota = {
         type: "mongodb"
     },
     mongodb: {
-        host: "idas-mongodb-0.idas-mongodb, idas-mongodb-1.idas-mongodb, idas-mongodb-2.idas-mongodb",
+        host: "mongodb-0.mongodb, mongodb-1.mongodb, mongodb-2.mongodb",
         port: "27017",
         db: "iotagentul",
         replicaSet: "rs0"
