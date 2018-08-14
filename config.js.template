@@ -41,7 +41,7 @@ config.http = {
 };
 
 config.iota = {
-    logLevel: "DEBUG",
+    logLevel: "WARN",
     timestamp: true,
     contextBroker: {
         host: "orion",
