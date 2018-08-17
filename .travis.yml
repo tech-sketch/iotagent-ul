@@ -5,10 +5,10 @@ sudo: required
 node_js:
  - "4"
  - "6"
+ - "8"
 
 branches:
   only:
-    - master
     - tech-sketch/1.7.0.plus
 
 services:
