@@ -9,6 +9,7 @@ node_js:
 branches:
   only:
     - master
+    - tech-sketch/1.7.0.plus
 
 services:
  - rabbitmq
